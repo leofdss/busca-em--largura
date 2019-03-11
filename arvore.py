@@ -6,10 +6,10 @@ class Node(object):
 
     def BFS(self, key):
         print('\n-----------Busca-----------')
-        return BFS([self], key)
+        return _BFS([self], key)
 
 
-def BFS(nodes, key):
+def _BFS(nodes, key):
     filhos = []
     if nodes:
         for item in nodes:
@@ -24,6 +24,6 @@ def BFS(nodes, key):
                     i += 1
                 filhos += item.children
         print('Proxima camada')
-        return BFS(filhos, key)
+        return _BFS(filhos, key)
     else:
         return None

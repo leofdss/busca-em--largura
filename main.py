@@ -20,17 +20,15 @@ e.children = [f, g2]
 h.children = [Node('i')]
 a.children = [h, e, b]
 
-'''
-  a
-/ |  \ 
-h e   b
-| |\  |\ 
-i f g c d
-  | | | |
-  g i i i
-  |
-  i
-'''
+#  a
+# / |  \
+# h e   b
+# | |\  |\
+# i f g c d
+# | | | |
+# g i i i
+# |
+# i
 
 result = a.BFS('i')
 
