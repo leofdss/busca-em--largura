@@ -32,7 +32,7 @@ i f g c d
   i
 '''
 
-result = a.BFS('g')
+result = a.BFS('i')
 
 print('Resultado: ' + result.key)
 print('Pai: ' + result.dad)
